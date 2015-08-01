@@ -1,6 +1,5 @@
 ![ApolloDB](https://github.com/jchomali/ApolloDB/blob/master/banner.png)
 
-An easy to implement and secure database for your apps.
 
 ## Why using ApolloDB?
 I basically love how easy is to save data in NSUserDefaults but how insecure and illogic to save it in a place designed for the user preferences. So I built ApolloDB, an easy to implement and secure database. 
