@@ -4,8 +4,11 @@
 ## Why using ApolloDB?
 I basically love how easy is to save data in NSUserDefaults but how insecure and illogic to save it in a place designed for the user preferences. So I built ApolloDB, an easy to implement and secure database. 
 
+## Installation
+Simply copy the files to your project and add the framework ```JavaScriptCore.framework```.
+
 ## Usage
-It's simple, first of all add the framework ```JavaScriptCore.framework```to start a session, you must use the following code anywhere but before saving or getting an object from the DB.
+It's simple, first of all to start a session, you must use the following code anywhere but before saving or getting an object from the DB.
 ```Objective-C
 BOOL passcodeIsValid = [[ApolloDB sharedManager]startSessionWithPasscode:@"yourDBPasscode"]; //Set a passcode for encrypting and decrypting your DB
 if (passcodeIsValid==false){
