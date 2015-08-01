@@ -16,7 +16,7 @@ if (passcodeIsValid==false){
 }
 ```
 Before starting the session, you can use any of the following methods for setting or getting an object from the DB. 
-* Remember that for saving custom classes as objects you must configure before the ```encodeWithCoder``` and ```initWithCoder``` methods
+Remember that for saving custom classes as objects you must configure the ```encodeWithCoder``` and ```initWithCoder``` methods of the class.
 ```Objective-C
 [[ApolloDB sharedManager]setObject:@"foo" forKey:@"bar"]; //Set an object for a key
 [[ApolloDB sharedManager]setObjects:@[@"foo", @"testing"] forKeys:@[@"bar", @"status"]]; //Set objects for the specified keys
