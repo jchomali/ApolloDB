@@ -1,4 +1,5 @@
-# ApolloDB ![ApolloDB](https://github.com/jchomali/ApolloDB/blob/master/banner.png)
+![ApolloDB](https://github.com/jchomali/ApolloDB/blob/master/banner.png)
+
 An easy to implement and secure database for your apps.
 
 ## Why using ApolloDB?
