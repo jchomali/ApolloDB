@@ -5,7 +5,7 @@
 I basically love how easy is to save data in NSUserDefaults but how insecure and illogic to save it in a place designed for the user preferences. So I built ApolloDB, an easy to implement and secure database. 
 
 ## Installation
-Simply copy the files to your project and add the framework ```JavaScriptCore.framework```.
+Simply copy the files to your project and add the framework ```JavaScriptCore.framework```. Then import the file ```ApolloDB.h``` to the classes in which you will use ApolloDB.
 
 ## Usage
 It's simple, first of all to start a session, you must use the following code anywhere but before saving or getting an object from the DB.
@@ -21,7 +21,7 @@ Remember that for saving custom classes as objects you must configure the ```enc
 [[ApolloDB sharedManager]setObject:@"foo" forKey:@"bar"]; //Set an object for a key
 [[ApolloDB sharedManager]setObjects:@[@"foo", @"testing"] forKeys:@[@"bar", @"status"]]; //Set objects for the specified keys
 [[ApolloDB sharedManager]removeObjectForKey:@"bar"]; //Remove the object corresponding to the specified key
-[[ApolloDB sharedManager]removeObjectForKey:@[@"bar", @"status"]]; //Remove the objects corresponding to the specified keys
+[[ApolloDB sharedManager]removeObjectsForKeys:@[@"bar", @"status"]]; //Remove the objects corresponding to the specified keys
 [[ApolloDB sharedManager]objectForKey:@"bar"]; //Get the object corresponding to the specified key
 [[ApolloDB sharedManager]objectsForKeys:@[@"bar", @"status"]]; //Get the objects corresponding to the specified keys
 NSDictionary *myData = [[ApolloDB sharedManager]allData]; //Get all the DB data
